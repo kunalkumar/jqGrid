@@ -277,7 +277,7 @@ $.jgrid.extend({
 							}
 						}
 						if ($t.p.cellsubmit === 'clientArray') {
-							$(cc).empty();
+							$(cc).html();
 							$($t).jqGrid("setCell",$t.rows[iRow].id,iCol, v2, false, false, true);
 							$(cc).addClass("dirty-cell");
 							$($t.rows[iRow]).addClass("edited");
